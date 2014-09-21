@@ -37,3 +37,11 @@ Scala関西ビギナーズ参加者のリストからランダムに1人を選�
 * Scala IO を使ってファイルから名前を読み込む[コミット](https://github.com/Kuchitama/scalakb4_workshop/commit/173a1cfe291913b0d1e32f4d4b48e5d75b0f1cbe)
 
 [サンプルコード](https://github.com/Kuchitama/scalakb4_workshop/releases/tag/step2)
+
+## Step3
+
+* 実行時オプションでファイルを指定するように変更
+* ファイルが指定されなければ、コマンドラインから名前を入力
+
+
+
