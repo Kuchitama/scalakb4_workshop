@@ -24,12 +24,16 @@ Scala関西ビギナーズ参加者のリストからランダムに1人を選�
 
 とりあえず、出力してみる
 
-* 変数に名前のリストを持ち、ランダムに1件出力する
+* 変数に名前のリストを持ち、ランダムに1件出力する[コミット](https://github.com/Kuchitama/scalakb4_workshop/commit/d2a27892e58ea6267bae15f8325d4163a4aea9b8)
+
+[サンプルコード](https://github.com/Kuchitama/scalakb4_workshop/releases/tag/step1)
+
 
 ## Step2
 
 ライブラリを使ってみる
 
-* Scala IO をsbtのlibraryDependencies に追加する
-* Scala IO を使ってファイルから名前を読み込む
+* Scala IO をsbtのlibraryDependencies に追加する[コミット](https://github.com/Kuchitama/scalakb4_workshop/commit/5858ce23dcbdf67e5ede5ea55d9794263b59d347)
+* Scala IO を使ってファイルから名前を読み込む[コミット](https://github.com/Kuchitama/scalakb4_workshop/commit/173a1cfe291913b0d1e32f4d4b48e5d75b0f1cbe)
 
+[サンプルコード](https://github.com/Kuchitama/scalakb4_workshop/releases/tag/step2)
