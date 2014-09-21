@@ -5,11 +5,13 @@ import scalax.file.Path
 
 import scala.collection.mutable.ListBuffer
 import scala.io.Source
+import scopt.OptionParser
 
 object NameSelector {
 
-  def main(args: Array[String]): Unit = {
-    val names: List[String] = if (args.size > 0) namesFromFile(args(0)) else readFromStdin()
+  def main(args: Array[String]): Unit = parser.parse(args, Config()).map{ conf =>
+    val file = conf.file
+    val names: List[String] = if (file.isEmpty) readFromStdin() else namesFromFile(file)
 
     val result = Random.shuffle(names).head
     println()
@@ -48,5 +50,16 @@ object NameSelector {
       stdin.close()
     }
     nameBuffer.toList
- }
+  }
+
+  lazy val parser = new OptionParser[Config]("NameSelector") {
+    head("NameSelector", "1.0")
+    opt[String]('f', "file") action { (input, config) =>
+      config.copy(file = input)} text ("file is a path to a file that written participant's names.")
+    help("help") text("print this message.")
+  }
+
+  case class Config(file: String = "")
+
 }
+

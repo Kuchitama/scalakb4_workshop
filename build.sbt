@@ -8,7 +8,8 @@ scalaVersion := "2.11.1"
 libraryDependencies ++= Seq(
   "org.scalatest" %% "scalatest" % "2.1.6" % "test",
   "com.github.scala-incubator.io" %% "scala-io-core" % "0.4.3-1",
-  "com.github.scala-incubator.io" %% "scala-io-file" % "0.4.3-1"
+  "com.github.scala-incubator.io" %% "scala-io-file" % "0.4.3-1",
+  "com.github.scopt" %% "scopt" % "3.2.0"
 )
 
 // Uncomment to use Akka
