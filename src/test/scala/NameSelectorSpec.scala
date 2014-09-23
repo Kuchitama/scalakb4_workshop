@@ -5,13 +5,12 @@ import com.example.NameSelector
 
 class NameSelectorSpec extends FlatSpec with ShouldMatchers {
 
-  // NameSelector#names に参加者の名前が含まれることを試験
-  "names" should "contains names of participants" in {
-    val names = NameSelector.names
-    
-    // 1件以上の名前があること
-    names.size should be > 0
-    // 名前が含まれていること
-    names should contain("aa7th")
+  // NameSelector#namesFromFilePathが指定のファイルから名前を読み込むことを試験
+  "namesFromFilePath" should "read names from file" in {
+    val path = "src/test/resources/test_names.txt"
+
+    val actuary = NameSelector.namesFromFile(path)
+    actuary.size should be === 3
+    actuary should be === List("hoge", "fuga", "piyo")
   }
 }
