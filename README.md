@@ -57,5 +57,16 @@ CLIっぽくしてみる
 実行可能なjarにまとめる
 
 * sbt-assemblyプラグインを追加する
-* `abt assembly`する
+* `sbt assembly`する
 
+[作成したjar](https://github.com/Kuchitama/scalakb4_workshop/releases/download/step4/scalakb4_workshop-assembly-1.0.jar)
+
+### 実行方法
+
+標準入力から
+
+    java -jar scalakb4_workshop-assembly-1.0.jar
+
+ファイルから
+
+    java -jar scalakb4_workshop-assembly-1.0.jar -f names.txt
