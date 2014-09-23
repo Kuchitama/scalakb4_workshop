@@ -38,7 +38,13 @@ Scala関西ビギナーズ参加者のリストからランダムに1人を選�
 
 [サンプルコード](https://github.com/Kuchitama/scalakb4_workshop/releases/tag/step2)
 
+****
+
+これ以降は、この課題の目的からはアドバンスドなステップになります。
+
 ## Step3
+
+CLIっぽくしてみる
 
 * 実行時オプションでファイルを指定するように変更
 * ファイルが指定されなければ、コマンドラインから名前を入力
@@ -46,4 +52,10 @@ Scala関西ビギナーズ参加者のリストからランダムに1人を選�
 [サンプルコード](https://github.com/Kuchitama/scalakb4_workshop/releases/tag/step3)
 
 
+## Step4
+
+実行可能なjarにまとめる
+
+* sbt-assemblyプラグインを追加する
+* `abt assembly`する
 

@@ -12,6 +12,8 @@ libraryDependencies ++= Seq(
   "com.github.scopt" %% "scopt" % "3.2.0"
 )
 
+assemblySettings
+
 // Uncomment to use Akka
 //libraryDependencies += "com.typesafe.akka" % "akka-actor_2.11" % "2.3.3"
 
