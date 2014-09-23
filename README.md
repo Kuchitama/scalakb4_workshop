@@ -56,7 +56,7 @@ CLIっぽくしてみる
 
 実行可能なjarにまとめる
 
-* sbt-assemblyプラグインを追加する
+* sbt-assemblyプラグインを追加する　[コミット](https://github.com/Kuchitama/scalakb4_workshop/commit/90241323087112b887b7dc8418aa514365482575)
 * `sbt assembly`する
 
 [作成したjar](https://github.com/Kuchitama/scalakb4_workshop/releases/download/step4/scalakb4_workshop-assembly-1.0.jar)
